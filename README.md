@@ -29,3 +29,20 @@ SP can add users to account as "PRIMARY_OWNER" or a "MEMBER"
 SP can create account rules : Quatas- number of clusters, applications, cluster security policy etc
 
 ![image](./MToverview.jpg)
+
+# Use cases
+## MSP Users (Cluster Admin role)
+- Create, update membership in, and delete accounts, i.e. tenant on-boarding and management
+  - Requires a common "Tenant" model between MCM and CEM/ICAM
+- View a list of all Accounts in one view
+- Do chargeback/billing based on each Account (metering/usage etc. metrics per tenant)
+- Assign roles to users within an Account (AccountAdmin or member). These roles define if the user can create namespaces/teams.
+- View and alter any cluster resource (cluster admin role has full control)
+- Be able to create accoiunt quotas
+
+#### Tenant Users
+- only access resources related to his Account and Team(s) in the Search view
+- If Tenant user has AccountAdmin role:
+  - can add additional users/groups to the Account
+  - can create and manage Teams
+  - can create namespaces
