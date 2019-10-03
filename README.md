@@ -28,4 +28,4 @@ SP manages account - create, delete, suspend etc
 SP can add users to account as "PRIMARY_OWNER" or a "MEMBER"
 SP can create account rules : Quatas- number of clusters, applications, cluster security policy etc
 
-![image](./images/MTandApps.png)
+![image](./MToverview.jpg)
